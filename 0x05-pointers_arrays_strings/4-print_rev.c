@@ -1,10 +1,10 @@
 #include "main.h"
-#include <stdio.h>
+
 
 /**
  * print_rev -prints a string in reverse
  * @s: The string to print
- * Return: void
+ * Return: 0
  */
 
 void print_rev(char *s)
@@ -12,7 +12,7 @@ void print_rev(char *s)
 int i;
 for (i = strlen(s) - 1; i >= 0; 1--)
 {
-_putcha(s[i]);
+_putchar(s[i]);
 }
-_putcha('\n');
+_putchar('\n');
 }
