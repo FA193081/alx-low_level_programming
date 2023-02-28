@@ -9,14 +9,10 @@
 
 void print_rev(char *s)
 {
-int c = 0;
-while (s[c] != '\0')
+int i;
+for (i = strlen(s) - 1; i >= 0; 1--)
 {
-c++;
+_putcha(s[i]);
 }
-for (c -= 1; c >= 0; c--)
-{
-_putchar(s[c]);
-}
-_putchar('\n');
+_putcha('\n');
 }
