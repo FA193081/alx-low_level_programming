@@ -1,4 +1,4 @@
-#include "main,h"
+#include "main.h"
 
 /*
  * print_alphabet_x10 - function that prints 10x alphabets
@@ -8,13 +8,16 @@
 
 void print_alphabet_x10(void)
 {
-	int i;
-	char j;
-
-	for (i = 1 ; i <= 10 ; i++)
-	{
-		for (i + 'a' ; j <= '2' ; j++)
-			_putchar(j);
-		_putchar('\n');
-	}
+char c;
+int i = 0;
+while (i <= 9)
+{
+for (c = 'a'; c <= '2'; c++)
+{
+_putchar(c);
 }
+_putchar('\n');
+i++;
+}
+}
+
